@@ -1,147 +1,110 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Flexbox</title>
-			<link rel="stylesheet" type="text/css" href="./css/style.css">
-		</head>
-		<body>
-			<header>
-				<div id="logo">
-					<img src="./imagens/logo.png">
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#sobre">Sobre</a></li>
-						<li><a href="#cursos">Cursos</a></li>
-						<li><a href="#planos">Planos</a></li>
-						<li><a href="#valores">Valores</a></li>
-					</ul>
-				</nav>
-			</header>
-				<main>
-					<section id="sobre">
-						<h1 id="sobre-titulo">Sobre</h1>
-							<div id="inf"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non quam blandit, facilisis lectus ac, varius nisl. Fusce est arcu, luctus non nisi quis, imperdiet eleifend magna. Nulla sed condimentum sem. Sed dolor leo, ullamcorper at suscipit at, vulputate sit amet leo. Aliquam scelerisque lacus non velit consequat rhoncus. Donec accumsan, magna sit amet pharetra ullamcorper, lacus massa volutpat risus, at feugiat nibh tellus eu eros. Pellentesque egestas dolor non quam feugiat tempus.</p></div>
-						<div id="inf-img">
-							<div id="inf-img1"><img src="./imagens/java.png"></div>
-							<div id="inf-img2"><img src="./imagens/php.png"></div>
-						</div>
-					</section>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <nav>
+        <div id="brasao_h"></div>
+        <h4 id="nome">jornal parobé</h4>
+        <ul id="menu">
+            <li class="cont" id="home"><a href="index.html">home</a></li>
+            <li class="cont"><a href="recentes.html">recentes</a></li>
+            <li class="cont"><a href="esportes.html">esportes</a></li>
+            <div id="pes">
+              <input type="text" name="search" id="search_bar2" placeholder="Search...">
+            </div>
+        </ul>
+        <a id="btn-menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="bars" class="fa fa-bars"></i>
+        </a>
+        
+      </nav>
+</header>
+<input type="text" name="search" id="search_bar" placeholder="  Search...">
 
-					<section id="cursos">
-						<h1>Cursos</h1>
-						<div class="content">
-							<div id="web-design">
-									<h2>Design Gráfico</h2>
-								<div id="">
-									<img src="./imagens/web-design.png">
-							</div>
-						</div>
+<div id="cinza-carro">
+  <div id="carro-img"><i  id="seta-esquerda" class="fa fa-angle-left setas"></i><i id="seta-direita" class=" setas fa fa-angle-right"></i></div>
+</div>
+<div id="principal">
+<h3>Titulo da noticia</h3>    
 
-								<div id="programacao">
-									<h2>Programação</h2>
-										<div id="">
-											<img src="./imagens/java.png">
-										</div>
-								</div>
+<main>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, veniam. Nemo maxime inventore enim, non exercitationem laudantium aut atque eligendi saepe ratione consequatur minima nulla reiciendis dolorum totam modi quae.</p>        
+    <br>
+    <p class="text">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem aliquam assumenda omnis repellat illo ipsum, quam quod, dolorem sint voluptate cumque sit sapiente necessitatibus nihil debitis, nostrum ratione numquam?</span>
+      <span>Nihil quis repellat earum error magnam architecto optio iure fuga consequuntur, commodi ab odit debitis. Optio doloribus iste sint! Fugiat commodi ut provident numquam sapiente aut corrupti eaque odit unde.</span>
+      <span>Deleniti laudantium facilis, soluta dolorum asperiores eaque dolore. Atque cumque ullam iste impedit ducimus numquam, enim provident aperiam officiis quae alias id, repellendus maiores debitis quos. Amet tempora laudantium in!</span>
+    </p>
+</main>
+</div>
 
-									<div id="banco-dados">
-										<h2>Banco de Dados</h2>
-											<div id="">
-												<img src="./imagens/bd.png">
-											</div>
-									</div>
-								</div>
-					</section>
+<h3 id="pantigas">Postagens Antigas</h3>
+<aside id="links_laterais">
+  
+  <div id="list">
+   <div id="ano"><a id="abre-ano" href="#" onclick="abreAno();">#2020</a>
+     <div id="mes-1" class="mes"><a id="abre-mes" href="#" onclick="abreMes();">◉ março</a>
+       <a class="linklist" href="#link1">link-1</a>
+       <a class="linklist" href="#link2">link-2</a>
+      <a class="linklist" href="#link2">link-3</a>
+      <a class="linklist" href="#link2">link-4</a>
+     </div>
+     <div id="mes-2" class="mes"><a id="abre-mes-2" href="#" onclick="abreMes();">◉ abril</a>
+      <a class="linklist" href="#link2">link-1</a>
+      <a class="linklist" href="#link2">link-2</a>
+      <a class="linklist" href="#link2">link-3</a>
+      <a class="linklist" href="#link2">link-4</a>
+    </div>
+   </div>
+  </div>  
+</aside>
+<br>
+<footer>2020 © kauê</footer>
 
-					<section id="planos">
-						<h1>Planos</h1>
-						<div class="content">
-						<div id="plano-bronze">
-							<h2 class="h2-planos">Bronze</h2>
-								<span class="planos-span">R$19,90</span>
-									<div class="planos-div">
-										<ul>
-											<li>Lorem Ipsum music</li>
-											<li>Então me ajude a segurar</li>
-											<li>Essa barra que é gostar</li>
-											<li>De você Então me ajude</li>
-											<br/>
-										</ul>
-									</div>
-									<div class="contratar">
-										<a href="#">Contratar</a>
-									</div>
-						</div>
-							<div id="plano-prata">
-							<h2 class="h2-planos">Prata</h2>
-								<span class="planos-span">R$29,90</span>
-									<div class="planos-div">
-										<ul>
-											<li>Lorem Ipsum music</li>
-											<li>Então me ajude a segurar</li>
-											<li>Essa barra que é gostar</li>
-											<li>De você Então me ajude</li>
-											<li>a segurar essa barra que</li>
-										</ul>
-									</div>
-									<div class="contratar">
-										<a href="#">Contratar</a>
-									</div>
-							</div>
-								<div id="plano-ouro">
-							<h2 class="h2-planos">Ouro</h2>
-								<span class="planos-span">R$39,90</span>
-									<div class="planos-div">
-										<ul>
-											<li>Lorem Ipsum music</li>
-											<li>Então me ajude a segurar</li>
-											<li>Essa barra que é gostar</li>
-											<li>De você Então me ajude</li>
-											<li>a segurar essa barra que</li>
-											<li>É gostar de você didididididiê</li>
-										</ul>
-									</div>
-									<div class="contratar">
-										<a href="#">Contratar</a>
-									</div>
-								</div>
-							</div>
-					</section>
 
-						<section id="valores">
-							<h1>Valores</h1>
-							<div class="content">
-								<div id="qualidade" class="valor">
-									<h2>Qualidade</h2>
-									<p>Suspendisse at finibus dolor. In sed euismod lorem, viverra pharetra ipsum. Nunc euismod interdum sem. Vivamus efficitur, magna in luctus dignissim, mauris neque efficitur sem.</p>
-								</div>
-								<div id="eficiencia" class="valor">
-									<h2>Eficiência</h2>
-									<p>ut rhoncus velit tortor luctus erat. Pellentesque faucibus, arcu quis dignissim convallis, magna massa feugiat lacus, sed finibus magna orci sed lectus. Vivamus sed bibendum enim.</p>
-								</div>
-								<div id="compromisso" class="valor">
-									<h2>Compromisso</h2>
-									<p>Ut accumsan felis quis vehicula blandit. Phasellus malesuada lobortis ipsum ut efficitur. Phasellus mauris ex, tristique id ex sed, congue vehicula nisl.</p>
-								</div>
-								<div id="inovacao" class="valor">
-									<h2>Inovação</h2>
-									<p>Ut nec sagittis orci. Duis non massa ut diam feugiat tempor a sit amet mi. Morbi aliquet ante blandit quam dictum, in maximus tellus viverra. Ut tempus at massa in faucibus.</p>
-								</div>
-									<div id="pesquisa" class="valor">
-									<h2>Pesquisa</h2>
-									<p>Sed orci justo, tincidunt quis mi eget, aliquam iaculis lorem. Nulla sed enim ut mauris rhoncus vestibulum. Praesent at est volutpat, elementum ligula in, maximus nibh.</p>
-								</div>
-									<div id="meio-ambiente" class="valor">
-									<h2>Meio Ambiente</h2>
-									<p>Nunc placerat nisl non convallis lobortis. Pellentesque egestas eleifend mi, id dignissim erat tincidunt vel. Curabitur commodo gravida est, nec porta urna. Quisque ac sapien urna.</p>
-								</div>
-							</div>
+  <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          var y = document.getElementById("btn-menu");
+          var z = document.getElementsByTagName("nav");
+          var bars = document.getElementById("bars");
 
-						</section>
-
-				</main>
-		</body>
-	</html>
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.marginTop= "-20vw";
+            bars.classList.remove("fa-times");
+            bars.classList.add("fa-bars");
+            
+          } else {
+            bars.classList.remove("fa-bars");
+            bars.classList.add("fa-times");
+            x.style.display = "block";
+            y.style.marginTop= "-95vw"; 
+            z.style.height= "50vw";
+            
+          }
+        }
+        function abreAno(){
+          var btnAno = document.getElementById("abre-ano");
+          var marco = document.getElementById("mes-1");
+          var abril = document.getElementById("mes-2");
+          if(marco.style.display === "none"){
+            marco.style.display = "block";
+            abril.style.display = "block";
+            
+          }
+          else{
+            marco.style.display = "none";
+            abril.style.display = "none";
+          }
+        }
+  </script>
+</body>
+</html>

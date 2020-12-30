@@ -1,4 +1,3 @@
-
 @media(max-width:1024px){
 *{  box-sizing: border-box;
     border: 0;
@@ -34,12 +33,12 @@ nav{
     width: 40%;
     margin-top: -12vw;
     margin-bottom: 7vw;
-    margin-left: 37vw;
+    margin-left: 30vw;
     display: block;
     text-transform: uppercase;
 }
 ul{
-    display:block;
+    display:flex;
     flex-flow:column;
     width: 100%;
     background-color: rgb(5, 149, 233);
@@ -93,21 +92,7 @@ margin-left: 5vw;
 #pes{
     padding-bottom: 5vw;
 }
-h3{margin-top: 20vw; margin-left: 5vw;}
-main{   
-    margin-top: 10vw;
-    background-color: white;
-    width: 90%;
-    margin-left: 5%;
-    border-radius: 20px;
-}
-main p{
-    color: black; 
-    width: 90%;
-    text-align: justify;
-    padding: 5%;
-    margin-left: 5%;
-}
+
 
 footer{
     position: fixed;
@@ -116,94 +101,69 @@ footer{
     bottom: 0;
     z-index: 99999;
 }
-#links_laterais{
+#pes{
+    background-color: rgb(5, 149, 233);
+}
+
+.noticias{
     margin-top: 10vw;
     background-color: white;
     width: 90%;
     margin-left: 5%;
     border-radius: 20px;
-    padding: 5vw;
+    margin-bottom: 10vw;
 }
-#list{
-    margin-left: 5vw;
+.noticias p {
+    color: black; 
+    width: 90%;
+    text-align: justify;
+    padding: 5%;
+    margin-left: 5%;
+    font-size: 5vw;
 }
-#abre-ano{
-    font-size: large;
-    display: block;
-    text-decoration: none;
+.link_titulo{
+    text-decoration:none;
     color: black;
+    margin-left: 5vw;
+    font-size: 5vw;
 }
 
-.mes{
-    display:none;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-}
-.mes a{
-    margin-right: -10vw;
-    text-decoration: none;
-    color: black;
-}
-.linklist{
-    margin-left: 10vw;
-    display: block;
-    text-decoration: none;
-    color: black;
-}
-#cinza-carro{
+.expandir{
+    background-color: rgb(223, 224, 224);
     width: 90%;
-    margin-left: 5%;
-    height: 35vw;
-    margin-top:10vw;
-    background-color: rgb(87, 81, 81);
-    position: absolute;
-    z-index: -1;
+    margin-left:5%;
+    margin-top: 5vw;
+    border-radius: 20px;
+    text-align: center;
+}
+.expandir i{
+    font-size: 8vw;
     
 }
-#pes{
-    background-color: rgb(5, 149, 233);
+#separador{
+    height: 15vw;
+    width: 100%;
 }
-#carro-img{
-    background-image: url("/imagens/prefeitura-capa.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 80%;
-    height: 50vw;
-    margin-left: 9vw;
-    position: absolute;
-    z-index: 1;
-    margin-top: -5vw;
-    text-align: center;
-    color: white;
-}
-#principal{
-    margin-top: 60vw;
-}
-.setas{
-    border: solid 1px none;
-    border-radius: 50px ;
-    width: 4%;
-    height: 3vw;
-    margin: 10px;
-    margin-top: 20vw;
-    background-color: rgba(255, 145, 0, 0.76);
 
+main{
+color: black;
 }
-#seta-esquerda{
-float: left;
-
-}
-#seta-direita{
-float: right;
-
+main div {
+    display: block;
+    margin-left: 10vw;
 }
 
 
 
 }
+
 @media(min-width:1024px){
-*{box-sizing: border-box;border: 0;margin: 0;padding: 0;}
+
+*{  box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
 body{
 background-color: rgb(176, 220, 250);
 
@@ -232,6 +192,10 @@ nav{
     margin-top: -3vw;
     font-size: 20px;
 }
+#menu{
+    padding: 0;
+
+}
 ul{
     background-color: rgb(5, 149, 233);
     display: flex;
@@ -241,6 +205,7 @@ ul{
     float: right;
     margin-top: -2vw;
     font-size: 20px;
+    padding: 10px;
 }
 
 nav ul li a{
@@ -250,13 +215,11 @@ nav ul li a{
     font-size: 20px;
 }
 
-#home{
-    border-bottom:solid 1px red;
-    margin: 0;
-}
+
 ul li{
     width: 20%;
     margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
     
 }
@@ -286,72 +249,6 @@ ul li{
 }
 #pes{display: none;}
 
-#cinza-carro{
-    width: 90%;
-    margin-left: 5%;
-    height: 35vw;
-    margin-top:10vw;
-    background-color: rgb(87, 81, 81);
-    position: absolute;
-    z-index: 999;
-    
-}
-#carro-img{
-    background-image: url("/imagens/prefeitura-capa.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 80%;
-    height: 50vw;
-    margin-left: 9vw;
-    position: absolute;
-    z-index: 999;
-    margin-top: -5vw;
-    font-size: 50px;
-    text-align: center; 
-    color: white;
-}
-#principal{
-    margin-top: 60vw;
-}
-.setas{
-    border: solid 10px none;
-    border-radius: 50px ;
-    height: 60px;
-    width: 60px;
-    margin: 10px;
-    margin-top: 20vw;
-    background-color: rgba(255, 145, 0, 0.76);
-
-}
-#seta-esquerda{
-float: left;
-
-}
-#seta-direita{
-float: right;
-
-}
-
-h3{ 
-    margin-top: 5vw;
-    margin-left: 5vw;
-    font-size: 2vw;
-}
-main{   
-    margin-top: 6vw;
-    background-color: white;
-    width: 60%;
-    margin-left: 5%;
-    border-radius: 20px;
-}
-main p{
-    color: black; 
-    width: 90%;
-    text-align: justify;
-    padding: 5%;
-    margin-left: 5%;
-}
-
 footer{
     position: fixed;
     background-color: white;
@@ -359,55 +256,75 @@ footer{
     bottom: 0;
     z-index: 99999;
 }
-#links_laterais{
-    margin-top: -28vw;
+.noticias{
+    margin-top: 5vw;
     background-color: white;
-    width: 25%;
-    margin-right: 5%;
+    width: 90%;
+    margin-left: 5%;
     border-radius: 20px;
-    float: right;
-    height: 28vw;
-
+    margin-bottom: 5vw;
 }
-#pantigas{
-    float: right;
-    margin-top: -36vw;
-    margin-right: 8vw;
-}
-#list{
-    margin-left: 5vw;
-}
-#abre-ano{
-    font-size: 2vw;
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 2vw;
-}
-
-.mes{
-    display:none;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-    font-size: 2vw;
-    margin-top: 0vw;
-}
-.mes a{
-    margin-right: -10vw;
-    text-decoration: none;
-    color: black;
-}
-.linklist{
-    margin-left: 10vw;
-    display: block;
-    text-decoration: none;
-    color: black;
-}
-.text{
+.noticias p {
+    color: black; 
+    width: 90%;
+    text-align: justify;
+    padding: 5%;
+    margin-left: 5%;
     font-size: 16px;
 }
+.link_titulo{
+    text-decoration:none;
+    color: black;
+    margin-left: 5vw;
+    font-size: 2vw;
+}
 
+.expandir{
+    background-color: rgb(223, 224, 224);
+    width: 90%;
+    margin-left:5%;
+    margin-top: 5vw;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.expandir i{
+    font-size: 3vw;
+    
+}
+#separador{
+    height: 15vw;
+    width: 100%;
+}
+
+main{
+color: black;
+margin-top: 5vw;
+}
+main div {
+    display: block;
+}
+#recentes{
+    border-bottom:solid 1px red;
+    width: 100%;
+    margin: 0;
+    
+}
+.link_titulo h2{
+    display: block;
+    width: 50%;
+}
+#letrinha-1{
+    float: right;
+    margin-top: -24px;
+    margin-right: 65vw;
+}
+#letrinha-2{
+    float: right;
+    margin-top: -24px;
+    margin-right: 73vw;
 }
 
 
+
+}
