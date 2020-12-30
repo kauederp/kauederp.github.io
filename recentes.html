@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>recentes</title>
+        <link rel="stylesheet" href="css/recentes.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <body>
+    <header>
+        <nav>
+            <div id="brasao_h"></div>
+            <h4 id="nome">jornal parobé</h4>
+            <ul id="menu">
+                <li class="cont"><a href="index.html">home</a></li>
+                <li class="cont" id="recentes"><a href="recentes.html">recentes</a></li>
+                <li class="cont"><a href="esportes.html">esportes</a></li>
+                <div id="pes">
+                  <input type="text" name="search" id="search_bar2" placeholder="Search...">
+                </div>
+            </ul>
+            <a id="btn-menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i id="bars" class="fa fa-bars"></i>
+            </a>
+            
+          </nav>
+    </header>
+    <input type="text" name="search" id="search_bar" placeholder="  Search...">
+    
+<main>
+
+    <br>
+    <div class="link_titulo">
+        <p>
+            <h2>Titulo noticia</h2><h5 id="letrinha-1">- mais recente</h5>
+        </p>
+    </div>
+
+    <div class="noticias">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis ab amet, totam eum quis delectus voluptatibus quidem. Omnis atque ex quaerat error magnam provident et voluptates enim facere cum?</p>
+        <p>Aliquam accusantium possimus officia natus molestiae voluptatum suscipit labore, est, nisi officiis ducimus odit necessitatibus ipsam placeat laboriosam architecto nostrum molestias repudiandae vero? Tenetur repudiandae, id quas facilis voluptatibus vitae.</p>
+    </div>
+    
+    <div href="#" class="link_titulo">
+        <h3 class="subtit">Titulo noticia</h3>
+    </div>
+
+    <div class="noticias">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis ab amet, totam eum quis delectus voluptatibus quidem. Omnis atque ex quaerat error magnam provident et voluptates enim facere cum?</p>
+    </div>
+    <div href="#" class="link_titulo">
+        <h3 class="subtit">Titulo noticia</h3>
+    </div>
+
+    <div class="noticias">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis ab amet, totam eum quis delectus voluptatibus quidem. Omnis atque ex quaerat error magnam provident et voluptates enim facere cum?</p>
+    </div>
+    <div href="#" class="link_titulo">
+        <h3 class="subtit">Titulo noticia</h3>
+    </div>
+
+    <div class="noticias">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis ab amet, totam eum quis delectus voluptatibus quidem. Omnis atque ex quaerat error magnam provident et voluptates enim facere cum?</p>
+    </div>
+    <div class="expandir"><i class="fa fa-angle-down"></i></div>
+<br>
+    <div class="link_titulo" href="#">
+      <h2>Política</h2><h5 id="letrinha-2">- mais recente</h5>
+    </div>
+
+
+    <div class="noticias">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis ab amet, totam eum quis delectus voluptatibus quidem. Omnis atque ex quaerat error magnam provident et voluptates enim facere cum?</p>
+    </div>
+    <div href="#" class="link_titulo">
+        <h3 class="subtit">Titulo noticia</h3>
+    </div>
+
+    <div class="noticias">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis ab amet, totam eum quis delectus voluptatibus quidem. Omnis atque ex quaerat error magnam provident et voluptates enim facere cum?</p>
+    </div>
+    <div class="expandir"><i class="fa fa-angle-down"></i></div>
+    <br>
+</main>
+
+
+
+<footer>2020 © kauê</footer>
+
+
+  <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          var y = document.getElementById("btn-menu");
+          var z = document.getElementsByTagName("nav");
+          var bars = document.getElementById("bars");
+
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.marginTop= "-20vw";
+            bars.classList.remove("fa-times");
+            bars.classList.add("fa-bars");
+            
+          } else {
+            bars.classList.remove("fa-bars");
+            bars.classList.add("fa-times");
+            x.style.display = "block";
+            y.style.marginTop= "-95vw"; 
+            z.style.height= "50vw";
+            
+          }
+        }
+        function abreAno(){
+          var btnAno = document.getElementById("abre-ano");
+          var marco = document.getElementById("mes-1");
+          var abril = document.getElementById("mes-2");
+          if(marco.style.display === "none"){
+            marco.style.display = "block";
+            abril.style.display = "block";
+            
+          }
+          else{
+            marco.style.display = "none";
+            abril.style.display = "none";
+          }
+        }
+  </script>
+</body>
+</html>
