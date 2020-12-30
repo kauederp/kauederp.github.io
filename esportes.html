@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>recentes</title>
+    <link rel="stylesheet" href="css/esportes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <nav>
+        <div id="brasao_h"></div>
+        <h4 id="nome">jornal parobé</h4>
+        <ul id="menu">
+            <li class="cont"><a href="index.html">home</a></li>
+            <li class="cont"><a href="recentes.html">recentes</a></li>
+            <li class="cont" id="esportes"><a href="esportes.html">esportes</a></li>
+            <div id="pes">
+              <input type="text" name="search" id="search_bar2" placeholder="  Search...">
+            </div>
+        </ul>
+        <a id="btn-menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="bars" class="fa fa-bars"></i>
+        </a>
+        
+      </nav>
+</header>
+<input type="text" name="search" id="search_bar" placeholder="  Search...">
+
+<div id="cinza-carro">
+  <div id="carro-img"><i  id="seta-esquerda" class="fa fa-angle-left setas"></i><i id="seta-direita" class=" setas fa fa-angle-right"></i></div>
+</div>
+<div id="principal">  
+  <h1 id="titulo">Titulo noticia</h1>
+<main>
+    
+    <div id="borda-tb">
+    <table id="tabelinha">
+        <tr>
+            <td class="tbescuro" id="qlt">Time</td>
+            <td class="tbescuro">jogos</td>
+            <td class="tbescuro" id="qrt">pontuação</td>
+        </tr>
+        <tr>
+            <td class="tbclaro">xxx</td>
+            <td class="tbclaro">xxx</td>
+            <td class="tbclaro">xxx</td>
+        </tr>
+        <tr>
+            <td class="tbclaro" id="qlb">xxx</td>
+            <td class="tbclaro">xxx</td>
+            <td class="tbclaro" id="qrb">xxx</td>
+        </tr>
+    </table>
+    </div>
+    <div id="comentario">
+      <div  id="ft-galvao"></div>
+      <div id="cm-txt">
+      <h4>Galvao comenta sobre...</h4>
+      <p>xx/xx/20xx</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aperiam corporis excepturi doloribus a possimus id, mollitia iste eligendi voluptates cumque facilis perspiciatis ea! Vel magnam expedita perferendis exercitationem fugiat!</p>
+      </div>
+    </div>
+</main>
+<br>
+<h1 id="pa">Postagens antigas</h1>
+<aside>
+  <ul id="lista-final">
+    <li class="link-aside">jogo 1</li>
+    <li class="link-aside">jogo 2</li>
+    <li class="link-aside">jogo 3</li>
+    <li class="link-aside">jogo 4</li>
+    <li class="link-aside">jogo 1</li>
+    <li class="link-aside">jogo 2</li>
+    <li class="link-aside">jogo 3</li>
+    <li class="link-aside">jogo 4</li>
+    <li class="link-aside">jogo 1</li>
+    <li class="link-aside">jogo 2</li>
+    <li class="link-aside">jogo 3</li>
+    <li class="link-aside">jogo 4</li>
+  </ul>
+</aside>
+
+<div class="expandir"><i class="fa fa-angle-down"></i></div>
+<br>
+<footer>2020 © kauê</footer>
+
+
+  <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          var y = document.getElementById("btn-menu");
+          var z = document.getElementsByTagName("nav");
+          var bars = document.getElementById("bars");
+
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.marginTop= "-20vw";
+            bars.classList.remove("fa-times");
+            bars.classList.add("fa-bars");
+            
+          } else {
+            bars.classList.remove("fa-bars");
+            bars.classList.add("fa-times");
+            x.style.display = "block";
+            y.style.marginTop= "-95vw"; 
+            z.style.height= "50vw";
+            
+          }
+        }
+  </script>
+</body>
+</html>
